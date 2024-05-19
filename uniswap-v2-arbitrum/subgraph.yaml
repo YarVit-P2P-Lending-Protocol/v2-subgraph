@@ -5,11 +5,11 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum
-    name: Uniswap V2 Factory
+    name: UniswapV2Factory
     network: arbitrum-one
     source:
       address: "0xf1D7CC64Fb4452F05c498126312eBE29f30Fbcf9"
-      abi: Uniswap V2 Factory
+      abi: UniswapV2Factory
       startBlock: 150442611
     mapping:
       kind: ethereum/events
@@ -18,8 +18,8 @@ dataSources:
       entities:
         - PairCreated
       abis:
-        - name: Uniswap V2 Factory
-          file: ./abis/Uniswap V2 Factory.json
+        - name: UniswapV2Factory
+          file: ./abis/UniswapV2Factory.json
       eventHandlers:
         - event: PairCreated(indexed address,indexed address,address,uint256)
           handler: handlePairCreated

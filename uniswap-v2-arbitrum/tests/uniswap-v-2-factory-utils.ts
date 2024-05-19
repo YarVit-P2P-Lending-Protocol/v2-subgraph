@@ -1,6 +1,6 @@
 import { newMockEvent } from "matchstick-as"
 import { ethereum, Address, BigInt } from "@graphprotocol/graph-ts"
-import { PairCreated } from "../generated/Uniswap V2 Factory/Uniswap V2 Factory"
+import { PairCreated } from "../generated/UniswapV2Factory/UniswapV2Factory"
 
 export function createPairCreatedEvent(
   token0: Address,
